@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Form Login dan Signup</title>
+</head>
+
+   <body>
+      <div class="wrapper">
+         <div class="title-text">
+            <div class="title login">
+                <img class="mb-4" src="./assets/img/logoandi.png" alt="" width="150" height="150">
+            </div>
+            <div class="title signup">
+                <img class="mb-4" src="./assets/img/logoandi.png" alt="" width="150" height="150">
+            </div>
+         </div>
+         <div class="form-container">
+            <div class="slide-controls">
+               <input type="radio" name="slide" id="login" checked>
+               <input type="radio" name="slide" id="signup">
+               <label for="login" class="slide login" >Login</label>
+               <label for="signup" class="slide signup" >Registrasi</label>
+               <div class="slider-tab"></div>
+            </div>
+            <div class="form-inner">
+               <form action="/login" class="login" method="post">
+                  <div class="field">
+                     <input type="text" name="email" placeholder="Masukan Email" required>
+                  </div>
+                  <div class="field">
+                     <input type="password" name="password" placeholder="Masukan Password" required>
+                  </div>
+                  <div class="pass-link">
+                     <a href="#">Lupa password?</a>
+                  </div>
+                  <div class="field btn">
+                     <div class="btn-layer"></div>
+                     <input type="submit" value="Login">
+                  </div>
+                  <div class="signup-link">
+                     Belum Punya Akun? <a href="">Daftar Sekarang</a>
+                  </div>
+               </form>
+               <form action="/register" class="signup" method="post">
+                  <div class="field">
+                     <input type="text" name="email" placeholder="Masukan Email" required>
+                  </div>
+                  <div class="field">
+                     <input type="password" name="password" placeholder="Masukan Password" required>
+                  </div>
+                  <div class="field">
+                     <input type="password" name="confirmPassword" placeholder="Konfirmasi password" required>
+                  </div>
+                  <div class="field btn">
+                     <div class="btn-layer"></div>
+                     <input type="submit" value="Daftar">
+                  </div>
+               </form>
+            </div>
+         </div>
+      </div>
+    <script src="animations/animation.js"></script>
+   </body>
+</html>
