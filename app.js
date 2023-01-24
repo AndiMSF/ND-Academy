@@ -35,16 +35,14 @@ app.use(passport.session())
 // mengambil data dari inputan user
 app.use(bodyParser.urlencoded({extended:true}))
 
+app.get('/register', function(req,res){
+    res.render(__dirname+'/register.ejs')
+})
 app.get('/', function(req,res){
     res.render(__dirname+'/home.ejs')
 })
 
-app.get('/', function(req,res){
-    res.render(__dirname+'/authentication.ejs')
-})
-app.get('/register', function(req,res){
-    res.render(__dirname+'/register.ejs')
-})
+
 
 app.get('/login', function(req,res){
     res.render(__dirname+'/login.ejs')
