@@ -38,7 +38,7 @@ app.use(bodyParser.urlencoded({extended:true}))
 app.get('/register', function(req,res){
     res.render(__dirname+'/register.ejs')
 })
-app.get('/', function(req,res){
+app.get('/home', function(req,res){
     res.render(__dirname+'/home.ejs')
 })
 
